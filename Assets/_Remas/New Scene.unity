@@ -418,14 +418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  rotateSpeed: 10
-  jumpForce: 0.2
+  jumpForce: 7
   gravity: -15
-  groundCheck: {fileID: 951653595}
-  groundDistance: 0.2
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!143 &1135540264
 CharacterController:
   m_ObjectHideFlags: 0

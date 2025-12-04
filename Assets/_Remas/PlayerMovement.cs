@@ -3,70 +3,65 @@
 [RequireComponent(typeof(CharacterController))]
 public class SonicController : MonoBehaviour
 {
-    public float moveSpeed = 8f;
-    public float rotateSpeed = 12f;
-    public float jumpForce = 7.5f;
+    public float moveSpeed = 10f;
+    public float jumpForce = 15f;
     public float gravity = -25f;
-    public Transform groundCheck;
-    public float groundDistance = 0.25f;
-    public LayerMask groundMask;
 
-    private CharacterController controller;
-    private Animator anim;
-    private float yVelocity;
-    private bool isGrounded;
-    private int direction = 1;
-    private bool isMovingHorizontal;
+    private CharacterController characterController;
+    private Vector3 moveVector;
+    private Animator animator; 
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>(); 
     }
 
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        float horizontalInput = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.D)) direction = 1;
-        if (Input.GetKeyDown(KeyCode.A)) direction = -1;
+        
+        moveVector.z = moveSpeed;
 
-        isMovingHorizontal = (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A));
+        
+        moveVector.x = horizontalInput * moveSpeed;
 
-        if (isGrounded && yVelocity < 0)
-            yVelocity = -2f;
-
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (characterController.isGrounded)
         {
-            yVelocity = Mathf.Sqrt(jumpForce * -2f * gravity);
-            anim.SetTrigger("Jump");
+            moveVector.y = 0f;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                moveVector.y = jumpForce;
+               
+                if (animator != null)
+                {
+                    animator.SetTrigger("Jump");
+                }
+            }
         }
 
-        yVelocity += gravity * Time.deltaTime;
+        moveVector.y += gravity * Time.deltaTime;
 
-        Vector3 move;
-        if (isGrounded)
+        characterController.Move(moveVector * Time.deltaTime);
+
+        
+        if (animator != null)
         {
-            // الحركة الأفقية الكاملة على الأرض
-            float horizontalSpeed = (direction == 1) ? moveSpeed : -moveSpeed;
-            move = new Vector3(horizontalSpeed, yVelocity, moveSpeed);
-        }
-        else
-        {
-            // الحركة في الهواء: تحافظ على السرعة الأمامية (Z) والسرعة العمودية (Y)، وإلغاء الحركة الجانبية (X) لمنع التزلج
-            move = new Vector3(0, yVelocity, moveSpeed);
+            
+            animator.SetFloat("Speed", moveVector.z);
         }
 
-        controller.Move(move * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
 
-        Vector3 targetForward = new Vector3(direction, 0f, 1f).normalized;
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(targetForward), rotateSpeed * Time.deltaTime);
-
-        // تحديث بارامترات الـ Animator
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("verticalSpeed", yVelocity);
-
-        // تشغيل الركض فقط إذا كان على الأرض وهناك حركة
-        anim.SetBool("isRunning", isGrounded && (direction == 1 || direction == -1));
+        if (horizontalInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (horizontalInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 }
