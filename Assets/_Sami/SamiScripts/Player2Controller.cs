@@ -36,7 +36,7 @@ public class Player2Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.L))
             input = 1f;
 
-        // IMPORTANT:
+        
         // Since Player 2 is facing Player 1, movement appears reversed.
         // This line guarantees the controls feel natural.
         input *= -1f;
