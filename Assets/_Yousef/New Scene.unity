@@ -243,8 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 1297320995893364060, guid: 87d401fb0e7e8da44894713c6bbce2f2, type: 3}
-  shotSpeed: 5
   shotCoolDown: 1
+  bulletHeight: 0
+  howFurther: 1
 --- !u!1 &309785680
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +555,10 @@ PrefabInstance:
     - target: {fileID: 1297320995893364060, guid: 87d401fb0e7e8da44894713c6bbce2f2, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297320995893364060, guid: 87d401fb0e7e8da44894713c6bbce2f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3896569093525005778, guid: 87d401fb0e7e8da44894713c6bbce2f2, type: 3}
       propertyPath: m_LocalPosition.x
