@@ -342,7 +342,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &726083644
+--- !u!1 &951653594
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,28 +350,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 726083645}
+  - component: {fileID: 951653595}
   m_Layer: 0
-  m_Name: groundCheck
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &726083645
+--- !u!4 &951653595
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726083644}
+  m_GameObject: {fileID: 951653594}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.066, y: 0.085, z: -17.67}
+  m_LocalPosition: {x: 0, y: -0.076, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1135540261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135540259 stripped
 GameObject:
@@ -400,6 +400,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1135540261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
+  m_PrefabInstance: {fileID: 1550861450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1135540263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,7 +421,7 @@ MonoBehaviour:
   rotateSpeed: 10
   jumpForce: 0.2
   gravity: -15
-  groundCheck: {fileID: 726083645}
+  groundCheck: {fileID: 951653595}
   groundDistance: 0.2
   groundMask:
     serializedVersion: 2
@@ -512,7 +517,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 951653595}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
       insertIndex: -1
@@ -629,4 +637,3 @@ SceneRoots:
   - {fileID: 1719954338}
   - {fileID: 689501519}
   - {fileID: 1550861450}
-  - {fileID: 726083645}
