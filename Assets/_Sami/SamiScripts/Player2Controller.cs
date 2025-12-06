@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player2Movement : MonoBehaviour
 {
+
     [Header("Movement Settings")]
     public float horizontalSpeed = 7f;
     public float backwardSpeed = 5f;
@@ -16,6 +17,7 @@ public class Player2Movement : MonoBehaviour
     [Header("Player 1 (Temporary or Real)")]
     public Transform player1;
     public float targetDistance = 10f;
+
 
     void Update()
     {
