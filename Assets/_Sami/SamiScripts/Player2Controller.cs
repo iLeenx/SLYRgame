@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player2Movement : MonoBehaviour
 {
+
     [Header("Movement Settings")]
     public float horizontalSpeed = 7f;
     public float backwardSpeed = 5f;
@@ -17,11 +18,16 @@ public class Player2Movement : MonoBehaviour
     public Transform player1;
     public float targetDistance = 10f;
 
+    void Start()
+    {
+        KeepFloatingHeight();
+
+    }
     void Update()
     {
         HandleHorizontalMovement();
         MaintainDistanceFromPlayer1();
-        KeepFloatingHeight();
+       
     }
 
     void HandleHorizontalMovement()
@@ -29,11 +35,11 @@ public class Player2Movement : MonoBehaviour
         float input = 0f;
 
         // J = move left (from player's perspective)
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.L))
             input = -1f;
 
         // L = move right
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.J))
             input = 1f;
 
         
@@ -53,19 +59,22 @@ public class Player2Movement : MonoBehaviour
 
     void MaintainDistanceFromPlayer1()
     {
+        // move backward if too close to Player 1
         if (player1 == null)
         {
-            transform.position += Vector3.back * backwardSpeed * Time.deltaTime;
+            transform.position += (-transform.forward) * backwardSpeed * Time.deltaTime;
             return;
         }
 
         float currentDistance = player1.position.z - transform.position.z;
 
+        // if we're too close to Player 1, move backward
         if (currentDistance < targetDistance)
         {
-            transform.position += Vector3.back * backwardSpeed * Time.deltaTime;
+            transform.position += (-transform.forward) * backwardSpeed * Time.deltaTime;
         }
     }
+
 
     void KeepFloatingHeight()
     {
