@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea6b6392122715340a4c6f759f756d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  sideSpeed: 10
   jumpForce: 7
   gravity: -15
 --- !u!143 &1135540264
@@ -445,6 +445,23 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1135540265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135540259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d8d01cee6afc942903601d337e58e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerShot: {fileID: 4075695806830746457, guid: 361ffdfd9dfefec45b07f787b8f1b5c7, type: 3}
+  playerShotCoolDown: 1
+  shotHeight: 1
+  shotForward: -2
+  playerGunSound: {fileID: 8300000, guid: 52e588f723725a64388e8b0b8740bdd5, type: 3}
 --- !u!1001 &1550861450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +542,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1135540264}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1135540265}
   m_SourcePrefab: {fileID: 100100000, guid: 4375194d9b3d1544f9467f06cd850f90, type: 3}
 --- !u!1 &1719954336
 GameObject:
