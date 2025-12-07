@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Gun
+  - BigGun
+  - EnemyShot
+  - PlayerShot
   layers:
   - Default
   - TransparentFX
@@ -17,9 +21,9 @@ TagManager:
   - 
   - Player1
   - Player2
-  - Projectile
-  - 
-  - 
+  - EnemyProjectile
+  - PlayerProjectile
+  - PowerUp
   - 
   - 
   - 
