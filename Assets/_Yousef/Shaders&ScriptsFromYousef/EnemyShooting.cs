@@ -8,11 +8,10 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] float bulletHeight = 0;
     [SerializeField] float howFurther = 0;
     
-    float nextShot = 0;
-    float bigShot = 0;
-    Vector3 shotPosition;
-
-    Vector3 bigShotPosition;
+    private float nextShot = 0;
+    private float bigShot = 0;
+    private Vector3 shotPosition;
+    private Vector3 bigShotPosition;
 
     void Update()
     {

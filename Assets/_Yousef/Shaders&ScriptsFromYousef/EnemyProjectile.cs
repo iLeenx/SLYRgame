@@ -1,14 +1,16 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyProjectile : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] float lifeTime = 1f;
+    [SerializeField] AudioClip shotClip;
 
     void OnEnable()
     {
-        CancelInvoke();
-        Invoke(nameof(DestroySelf), lifeTime);
+        StopAllCoroutines();
+        StartCoroutine(DelayLifeTime(lifeTime));
     }
     void Update()
     {
@@ -17,11 +19,17 @@ public class EnemyProjectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        AudioSource.PlayClipAtPoint(shotClip, transform.position);
         DestroySelf();
     }
     void DestroySelf()
     {
-        CancelInvoke();
+        StopAllCoroutines();
+        Destroy(gameObject);
+    }
+    IEnumerator DelayLifeTime(float timer)
+    {
+        yield return new WaitForSeconds(timer);
         Destroy(gameObject);
     }
 }
