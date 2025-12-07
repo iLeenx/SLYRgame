@@ -4,11 +4,15 @@ public class EnemyShooting : MonoBehaviour
 {
     [SerializeField] GameObject shot;
     [SerializeField] float shotCoolDown = 1;
+    [SerializeField] float bigShotCoolDown = 1;
     [SerializeField] float bulletHeight = 0;
     [SerializeField] float howFurther = 0;
     
     float nextShot = 0;
+    float bigShot = 0;
     Vector3 shotPosition;
+
+    Vector3 bigShotPosition;
 
     void Update()
     {
@@ -46,6 +50,38 @@ public class EnemyShooting : MonoBehaviour
             GameObject go = Instantiate(shot, shotPosition, transform.rotation);
 
             EnemyProjectile proj = go.GetComponent<EnemyProjectile>();
+        }
+        shootInAllDir();
+    }
+    void shootInAllDir()
+    {
+        if (Input.GetButtonDown("Jump") && Time.time >= bigShot)
+        {
+            bigShot = Time.time + bigShotCoolDown;
+            
+            bigShotPosition = transform.position;
+            bigShotPosition.y = bigShotPosition.y + bulletHeight;
+            bigShotPosition.z = bigShotPosition.z + howFurther;
+
+            GameObject go = Instantiate(shot, bigShotPosition, transform.rotation);
+
+            bigShotPosition = transform.position;
+            bigShotPosition.y = bigShotPosition.y + bulletHeight;
+            bigShotPosition.x = bigShotPosition.x + 2.0f;
+            bigShotPosition.z = bigShotPosition.z + howFurther;
+
+            GameObject go1 = Instantiate(shot, bigShotPosition, transform.rotation);
+
+            bigShotPosition = transform.position;
+            bigShotPosition.y = bigShotPosition.y + bulletHeight;
+            bigShotPosition.x = bigShotPosition.x - 2.0f;
+            bigShotPosition.z = bigShotPosition.z + howFurther;
+
+            GameObject go2 = Instantiate(shot, bigShotPosition, transform.rotation);
+
+            EnemyProjectile proj = go.GetComponent<EnemyProjectile>();
+            EnemyProjectile proj1 = go1.GetComponent<EnemyProjectile>();
+            EnemyProjectile proj2 = go2.GetComponent<EnemyProjectile>();
         }
     }
 }
