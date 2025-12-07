@@ -18,12 +18,16 @@ public class Player2Movement : MonoBehaviour
     public Transform player1;
     public float targetDistance = 10f;
 
+    void Start()
+    {
+        KeepFloatingHeight();
 
+    }
     void Update()
     {
         HandleHorizontalMovement();
         MaintainDistanceFromPlayer1();
-        KeepFloatingHeight();
+       
     }
 
     void HandleHorizontalMovement()
