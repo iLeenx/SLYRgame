@@ -15,7 +15,7 @@ public class EnemyShooting : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0) && Time.time >= nextShot)
+        if (Input.GetButtonDown("EnemyShoot1") && Time.time >= nextShot)
         {
             nextShot = Time.time + shotCoolDown;
             shotPosition = transform.position;
@@ -30,7 +30,7 @@ public class EnemyShooting : MonoBehaviour
     }
     void shootInAllDir()
     {
-        if (Input.GetMouseButton(1) && Time.time >= bigShot)
+        if (Input.GetButtonDown("EnemyShoot2") && Time.time >= bigShot)
         {
             bigShot = Time.time + bigShotCoolDown;
             
