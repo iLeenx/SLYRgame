@@ -3,15 +3,40 @@ using UnityEngine;
 public class DamagingPlayer : MonoBehaviour
 {
     public int health = 20;
+    [SerializeField] float invincibleTimer = 3;
+
+
+    private bool invincible = false;
+    private float timer = 0;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("EnemyShot"))
+        if (!invincible)
         {
-            health--;
-            if(health == 0)
+            if (other.CompareTag("EnemyShot"))
             {
-                Destroy(gameObject);
+                health--;
+                if (health == 0)
+                {
+                    Destroy(gameObject);
+                }
             }
+        }
+        if(other.CompareTag("Invincible"))
+        {
+            invincible = true;
+            timer = invincibleTimer;
+        }
+    }
+    void Update()
+    {
+        if(timer > 0)
+        {
+            timer = timer - Time.deltaTime;
+            Debug.Log(timer);
+        }
+        else
+        {
+            invincible = false;
         }
     }
 }
