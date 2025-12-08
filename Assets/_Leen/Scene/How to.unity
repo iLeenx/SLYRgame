@@ -786,12 +786,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'J + L -->  move left and right
-
-    K --> shooting
-
-
-    try to kill ...'
+  m_text: "move left and right using J and L\nleft mouse click (LMC) \u2192 shoot
+    in the left lane\nmiddle mouse click (MMC) \u2192 shoot in the middle lane\nright
+    mouse click (RMC) \u2192 shoot in the right lane\npress K to place obstacles
+    in player 1\u2019s path\n\nshoot player 1 and defeat them to stop their run"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -818,14 +816,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -906,7 +904,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1300, y: 600}
+  m_SizeDelta: {x: 1795.4, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &919304914
 MonoBehaviour:
@@ -928,16 +926,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A + D -->  move left and right
-
-    S --> shooting
-
-
-    try to survive
-    ...'
+  m_text: "move left and right using A and D\ncollect the gun power-up (gun icon)
+    to get a weapon\ncollect the big gun power-up (big gun icon) to unlock a stronger
+    weapon\nthis is an infinite runner game \u2014 the world keeps moving forward
+    and the challenge never ends\n\ntry to survive for as long as possible while
+    avoiding dangers and attacks"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -961,14 +957,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1262,7 +1258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1248093819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1454,7 +1450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1412108350
 RectTransform:
   m_ObjectHideFlags: 0
