@@ -32,7 +32,6 @@ public class DamagingPlayer : MonoBehaviour
         if(timer > 0)
         {
             timer = timer - Time.deltaTime;
-            Debug.Log(timer);
         }
         else
         {
