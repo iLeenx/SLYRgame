@@ -9,6 +9,7 @@ TagManager:
   - BigGun
   - EnemyShot
   - PlayerShot
+  - Health
   layers:
   - Default
   - TransparentFX
