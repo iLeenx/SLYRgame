@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031a19cb5189e6c43a90b58d8bc7ad92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthCollectingSound: {fileID: 0}
+  HealthCollectingSound: {fileID: 8300000, guid: bda67f990bbf5fd49862906b24377704, type: 3}
   playerHealth: {fileID: 0}
 --- !u!114 &-7315463536005168354
 MonoBehaviour:
