@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Panels : MonoBehaviour
 {
+    // this is for How To scene
+
     [SerializeField] GameObject p1Panel = null;
     [SerializeField] GameObject p2Panel = null;
     [SerializeField] GameObject nextButton = null;
