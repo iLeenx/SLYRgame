@@ -90,8 +90,10 @@ MonoBehaviour:
   useEasingForFloating: 1
   floatHeight: 1.93
   floatSpeed: 0.4
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.2, y: 1.2, z: 1.2}
   isScaling: 1
   useEasingForScaling: 1
   scaleLerpSpeed: 1.11
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 1.2, y: 1.2, z: 1.2}
+  isSliding: 1
+  slideSpeed: 4
