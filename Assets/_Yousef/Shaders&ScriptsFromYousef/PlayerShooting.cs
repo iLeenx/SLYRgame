@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] float playerShotCoolDown = 1;
     [SerializeField] float shotHeight = 1;
     [SerializeField] float shotForward = 1;
+    [SerializeField]
+    Image[] bullets;
     [SerializeField] AudioClip playerGunSound;
     
     private float nextShot = 0;
@@ -27,6 +30,9 @@ public class PlayerShooting : MonoBehaviour
 
             PlayerProjectile proj = go.GetComponent<PlayerProjectile>();
             shotCount--;
+            Color color = bullets[shotCount].color;
+            color.a = 0.0f;
+            bullets[shotCount].color = color;
             if(shotCount == 0)
             {
                 hasGun = false;
@@ -35,15 +41,29 @@ public class PlayerShooting : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Gun"))
+        if (bullets[bullets.Length - 1].color.a != 1.0f)
         {
-            shotCount = Mathf.Min(shotCount + 1, 5);
-            hasGun = true;
-        }
-        if (other.CompareTag("BigGun"))
-        {
-            shotCount = Mathf.Min(shotCount + 3, 5);
-            hasGun = true;
+            if (other.CompareTag("Gun"))
+            {
+                Color color = bullets[shotCount].color;
+                color.a = 1.0f;
+                bullets[shotCount].color = color;
+                shotCount = Mathf.Min(shotCount + 1, 5);
+                hasGun = true;
+            }
+            if (other.CompareTag("BigGun"))
+            {
+                int addedBullets = shotCount;
+                addedBullets = Mathf.Min(addedBullets + 3, bullets.Length);
+                for (int i = shotCount; i < addedBullets; i++)
+                {
+                    Color color = bullets[i].color;
+                    color.a = 1.0f;
+                    bullets[i].color = color;
+                }
+                shotCount = addedBullets;
+                hasGun = true;
+            }
         }
     }
 }
