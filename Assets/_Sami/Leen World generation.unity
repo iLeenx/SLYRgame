@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: playerGunSound
       value: 
       objectReference: {fileID: 8300000, guid: b0567fe1227a0cb47988137010137fb4, type: 3}
+    - target: {fileID: 3250218632580779169, guid: 667abae87444d76459898939a8c4925a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.33
+      objectReference: {fileID: 0}
     - target: {fileID: 3823523043738805612, guid: 667abae87444d76459898939a8c4925a, type: 3}
       propertyPath: respawnPoint
       value: 
@@ -340,7 +344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8902167015522859350, guid: 23f8e199d9139a242abfd617e9d3047f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.87
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 8902167015522859350, guid: 23f8e199d9139a242abfd617e9d3047f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -649,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 1186975900}
   serializedVersion: 2
   m_LocalRotation: {x: -0.16899647, y: 0.005136801, z: -0.010288346, w: -0.98554957}
-  m_LocalPosition: {x: 0.017160542, y: 3.79, z: -5.32}
+  m_LocalPosition: {x: 0.017160542, y: 3.79, z: -5.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 9161204584934172824}
   - component: {fileID: 6068898674178869563}
   - component: {fileID: -5210709271835650309}
-  - component: {fileID: -8648666836098870380}
   - component: {fileID: -7315463536005168354}
   m_Layer: 13
   m_Name: RedPotion
@@ -139,20 +138,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6790125, y: 2.663424, z: 1.6790125}
   m_Center: {x: -0.000000029802322, y: 0.49946702, z: 0}
---- !u!114 &-8648666836098870380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7215856734752065869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 031a19cb5189e6c43a90b58d8bc7ad92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthCollectingSound: {fileID: 8300000, guid: bda67f990bbf5fd49862906b24377704, type: 3}
-  playerHealth: {fileID: 0}
 --- !u!114 &-7315463536005168354
 MonoBehaviour:
   m_ObjectHideFlags: 0
