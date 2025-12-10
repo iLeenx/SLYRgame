@@ -8,6 +8,12 @@ public class DamagingPlayer : MonoBehaviour
 
     private bool invincible = false;
     private float timer = 0;
+
+    private int maxHealth;
+    void Start()
+    {
+        maxHealth = health;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (!invincible)
@@ -21,15 +27,19 @@ public class DamagingPlayer : MonoBehaviour
                 }
             }
         }
-        if(other.CompareTag("Invincible"))
+        if (other.CompareTag("Invincible"))
         {
             invincible = true;
             timer = invincibleTimer;
         }
+        if (other.CompareTag("Health"))
+        {
+            health = Mathf.Min(health + 1, maxHealth);
+        }
     }
     void Update()
     {
-        if(timer > 0)
+        if (timer > 0)
         {
             timer = timer - Time.deltaTime;
         }
