@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 277124196644745377}
   - component: {fileID: 7473367057301530885}
   - component: {fileID: 8203449969244720426}
-  - component: {fileID: 6322065894274105052}
   m_Layer: 13
   m_Name: Health
   m_TagString: Health
@@ -123,17 +122,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectClip: {fileID: 8300000, guid: b0567fe1227a0cb47988137010137fb4, type: 3}
---- !u!114 &6322065894274105052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7707013190524171096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 031a19cb5189e6c43a90b58d8bc7ad92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HealthCollectingSound: {fileID: 8300000, guid: bda67f990bbf5fd49862906b24377704, type: 3}
-  playerHealth: {fileID: 0}
