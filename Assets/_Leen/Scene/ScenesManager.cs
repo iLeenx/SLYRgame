@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
+    public SceneFader sceneFader;
+
     void Start()
     {
         Time.timeScale = 1f;
@@ -13,20 +15,24 @@ public class ScenesManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("Main menu");
+        //SceneManager.LoadScene("Main menu");
+        sceneFader.FadeToScene("Main menu");
+
         Time.timeScale = 1f;
         Debug.Log("Game Resumed");
     }
 
     public void GoToHowTo()
     {
-        SceneManager.LoadScene("How to");
+        //SceneManager.LoadScene("How to");
+        sceneFader.FadeToScene("How to");
         Debug.Log("How to scene");
     }
 
     public void GoToCredits()
     {
-        SceneManager.LoadScene("Credits");
+        //SceneManager.LoadScene("Credits");
+        sceneFader.FadeToScene("Credits");
         Debug.Log("Credits scene");
     }
 
@@ -34,7 +40,8 @@ public class ScenesManager : MonoBehaviour
 
     public void GoToSettings()
     {
-        SceneManager.LoadScene("Settings");
+        //SceneManager.LoadScene("Settings");
+        sceneFader.FadeToScene("Settings");
     }
 
     public void SettingsAdd()
@@ -51,14 +58,18 @@ public class ScenesManager : MonoBehaviour
 
     public void GoToLevelNumber(int levelNumber)
     {
-        SceneManager.LoadScene($"Level {levelNumber}");
+        //SceneManager.LoadScene($"Level {levelNumber}");
+        sceneFader.FadeToScene($"Level {levelNumber}");
+
         Time.timeScale = 1f; // resume game
         Debug.Log("level started");
     }
 
     public void GoToSceneName(string SceneName)
     {
-        SceneManager.LoadScene(SceneName);
+        //SceneManager.LoadScene(SceneName);
+        sceneFader.FadeToScene(SceneName);
+
         Time.timeScale = 1f; // resume game
         Debug.Log("level started");
     }
@@ -81,7 +92,8 @@ public class ScenesManager : MonoBehaviour
     public void PlayAgain(string SceneName)
     {
         Time.timeScale = 1f; // resume game
-        SceneManager.LoadScene(SceneName);
+        //SceneManager.LoadScene(SceneName);
+        sceneFader.FadeToScene(SceneName);
         Debug.Log("level restarted");
     }
 }
