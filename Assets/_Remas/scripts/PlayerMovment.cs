@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SamiController : MonoBehaviour
+public class PlayerMovment: MonoBehaviour
 {
     public float sideSpeed = 10f;
     public float jumpForce = 15f;
