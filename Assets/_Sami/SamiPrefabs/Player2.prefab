@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 2382334273060700667}
   - component: {fileID: 6894495475607298261}
   - component: {fileID: 5350341615555592102}
-  m_Layer: 0
+  - component: {fileID: 3720593182820707271}
+  - component: {fileID: 2720970819709816711}
+  m_Layer: 10
   m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalSpeed: 7
-  backwardSpeed: 5
+  backwardSpeed: 0
   minX: -3
   maxX: 3
   fixedY: 2.5
@@ -146,6 +148,36 @@ MonoBehaviour:
   throwPoint: {fileID: 3065337543466676549}
   throwSpeed: -2
   cooldown: 0.5
+--- !u!114 &3720593182820707271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448213990982459549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8727c706578e1b44e85cbafd24e13fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot: {fileID: 1297320995893364060, guid: 87d401fb0e7e8da44894713c6bbce2f2, type: 3}
+  shotCoolDown: 10
+  bigShotCoolDown: 10
+  bulletHeight: 0
+  howFurther: 0
+--- !u!114 &2720970819709816711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448213990982459549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a01d89b689f95a4ea64bc319c1985ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &3323960135793460038
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3065337543466676549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ObstacleFaliingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

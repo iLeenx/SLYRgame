@@ -3,6 +3,7 @@ using UnityEngine;
 public class DamagingEnemy : MonoBehaviour
 {
     public int health = 20;
+    [SerializeField] GameObject losing;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("PlayerShot"))
@@ -10,7 +11,8 @@ public class DamagingEnemy : MonoBehaviour
             health--;
             if(health == 0)
             {
-                Destroy(gameObject);
+                losing.SetActive(true);
+                Time.timeScale = 0.0f;
             }
         }
     }
