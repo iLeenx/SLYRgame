@@ -3,15 +3,17 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public DamagingEnemy healthCheck;
+    public DamagingEnemy enemy;
 
     TMP_Text healthText;
+    private int maxHealth;
     void Start()
     {
         healthText = GetComponent<TMP_Text>();
+        maxHealth = enemy.health;
     }
     void Update()
     {
-        healthText.text = ((int)healthCheck.health).ToString();
+        healthText.text = $"{(int)enemy.health}/{(int)maxHealth}";
     }
 }
