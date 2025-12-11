@@ -1358,6 +1358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 2720970819709816711, guid: 23f8e199d9139a242abfd617e9d3047f, type: 3}
+      propertyPath: losing
+      value: 
+      objectReference: {fileID: 1903078986}
     - target: {fileID: 3720593182820707271, guid: 23f8e199d9139a242abfd617e9d3047f, type: 3}
       propertyPath: shotCoolDown
       value: 1
@@ -2852,14 +2856,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1 v2
       objectReference: {fileID: 0}
-    - target: {fileID: 6406063916731337895, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7063260432957570013, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 7166572200441397328, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
+      propertyPath: losing
+      value: 
+      objectReference: {fileID: 1903078986}
+    - target: {fileID: 7166572200441397328, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
+      propertyPath: shieldIcon
+      value: 
+      objectReference: {fileID: 854420807}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
