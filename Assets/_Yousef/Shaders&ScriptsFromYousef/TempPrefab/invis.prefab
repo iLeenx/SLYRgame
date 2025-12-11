@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7861160654999948572}
   - component: {fileID: 2751617754735566458}
   m_Layer: 13
-  m_Name: Cube
+  m_Name: invis
   m_TagString: Invincible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
