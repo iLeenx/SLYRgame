@@ -7,6 +7,7 @@ public class SimpleItemSpawner : MonoBehaviour
     public GameObject buff1;
     public GameObject buff2;
     public GameObject buff3;
+    public GameObject buff4;
 
     [Header("Spawn Timing")]
     public float spawnInterval = 3f;
@@ -26,7 +27,7 @@ public class SimpleItemSpawner : MonoBehaviour
 
     void SpawnRandomBuff()
     {
-        int randomIndex = UnityEngine.Random.Range(0, 3);
+        int randomIndex = UnityEngine.Random.Range(0, 4);
 
 
         GameObject selected = null;
@@ -34,6 +35,7 @@ public class SimpleItemSpawner : MonoBehaviour
         if (randomIndex == 0) selected = buff1;
         if (randomIndex == 1) selected = buff2;
         if (randomIndex == 2) selected = buff3;
+        if (randomIndex == 3) selected = buff4;
 
         if (selected != null)
         {
