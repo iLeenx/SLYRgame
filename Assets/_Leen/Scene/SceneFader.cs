@@ -19,7 +19,7 @@ public class SceneFader : MonoBehaviour
 
     public void FadeToScene(string sceneName)
     {
-        fadeImage.gameObject.SetActive(true);
+        //fadeImage.gameObject.SetActive(true);
         StartCoroutine(FadeOut(sceneName));
     }
 
