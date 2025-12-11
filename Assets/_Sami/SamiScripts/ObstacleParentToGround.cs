@@ -15,7 +15,7 @@ public class ObstacleParentToGround : MonoBehaviour
         // Check if we've already parented to avoid re-parenting
         if (hasParented)
             return;
-
+        
         // Check if the collision is with a ground object
         // You can use tags, layers, or specific object names
         if (collision.gameObject.CompareTag("Ground"))
