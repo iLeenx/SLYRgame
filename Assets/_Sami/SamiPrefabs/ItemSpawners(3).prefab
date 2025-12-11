@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6746356028976516127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.04, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,7 +47,8 @@ MonoBehaviour:
   buff1: {fileID: 8475833574052523601, guid: a1614f0cf649e3a4e894d20bda9008e7, type: 3}
   buff2: {fileID: 519974796596659617, guid: 996928e6bd7f53b4c922c5099f203847, type: 3}
   buff3: {fileID: 7215856734752065869, guid: 1242a88922ac6d34da67517f4c97626b, type: 3}
-  spawnInterval: 3
+  buff4: {fileID: 0}
+  spawnInterval: 7
 --- !u!1 &6911919183706554578
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +75,7 @@ Transform:
   m_GameObject: {fileID: 6911919183706554578}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3, y: 0, z: 0}
+  m_LocalPosition: {x: 1.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,7 +96,8 @@ MonoBehaviour:
   buff1: {fileID: 8475833574052523601, guid: a1614f0cf649e3a4e894d20bda9008e7, type: 3}
   buff2: {fileID: 519974796596659617, guid: 996928e6bd7f53b4c922c5099f203847, type: 3}
   buff3: {fileID: 7215856734752065869, guid: 1242a88922ac6d34da67517f4c97626b, type: 3}
-  spawnInterval: 3
+  buff4: {fileID: 519974796596659617, guid: 84da2df8f4f10e3459ed32ba5c982741, type: 3}
+  spawnInterval: 12
 --- !u!1 &7586801713491290995
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +124,7 @@ Transform:
   m_GameObject: {fileID: 7586801713491290995}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -143,7 +145,8 @@ MonoBehaviour:
   buff1: {fileID: 8475833574052523601, guid: a1614f0cf649e3a4e894d20bda9008e7, type: 3}
   buff2: {fileID: 519974796596659617, guid: 996928e6bd7f53b4c922c5099f203847, type: 3}
   buff3: {fileID: 7215856734752065869, guid: 1242a88922ac6d34da67517f4c97626b, type: 3}
-  spawnInterval: 3
+  buff4: {fileID: 0}
+  spawnInterval: 18
 --- !u!1 &9142534791933642926
 GameObject:
   m_ObjectHideFlags: 0
