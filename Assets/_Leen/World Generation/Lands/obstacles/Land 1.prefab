@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 4880857770867262296}
   - component: {fileID: 7407641352417540436}
   - component: {fileID: 929989241386784195}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rock (1)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,9 +376,9 @@ GameObject:
   - component: {fileID: 7046235926587354537}
   - component: {fileID: 2383983476236178737}
   - component: {fileID: 7190970622830345539}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,9 +629,9 @@ GameObject:
   - component: {fileID: 4655705373554953508}
   - component: {fileID: 6147832349327112626}
   - component: {fileID: 5961045079236959815}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Rock (2)
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 7921714852954098715}
   - component: {fileID: 1301931110228979763}
   - component: {fileID: 1611599230040943597}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -933,7 +933,7 @@ GameObject:
   - component: {fileID: 6414529306195632928}
   - component: {fileID: 6773003232864104739}
   - component: {fileID: 6014195843133081772}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Trigger (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 4905602360953722982}
   - component: {fileID: 417214608009852872}
   - component: {fileID: 6695873294024463195}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,6 +1231,10 @@ PrefabInstance:
       value: rock-2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1311,6 +1315,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 316250db2962f3548b9d78e70ffa107f, type: 3}
       propertyPath: m_Name
       value: rock-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 316250db2962f3548b9d78e70ffa107f, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 316250db2962f3548b9d78e70ffa107f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1456,6 +1468,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock-2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1533,6 +1553,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
       propertyPath: m_Name
       value: rock-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: faac70755157bf14aa958a838044ef29, type: 3}
       propertyPath: m_IsActive
@@ -1615,6 +1639,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a33bbcf9b51ec704ca4b32ff20af950b, type: 3}
       propertyPath: m_Name
       value: rock-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a33bbcf9b51ec704ca4b32ff20af950b, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a33bbcf9b51ec704ca4b32ff20af950b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

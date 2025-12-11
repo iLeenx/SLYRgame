@@ -20,7 +20,7 @@ public class DamagingPlayer : MonoBehaviour
     {
         if (!invincible)
         {
-            if (other.CompareTag("EnemyShot"))
+            if (other.CompareTag("EnemyShot") || other.CompareTag("Obstacles"))
             {
                 health--;
                 if (health == 0)
