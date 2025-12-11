@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: startPos.x
       value: -13
       objectReference: {fileID: 0}
+    - target: {fileID: 7039132861123946727, guid: f3ff3932039b9624e96c3f5e1f687a3c, type: 3}
+      propertyPath: land.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039132861123946727, guid: f3ff3932039b9624e96c3f5e1f687a3c, type: 3}
+      propertyPath: 'land.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3846944215046808268, guid: 3ef4e26c161318242ab05eb3ff03b7e3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
