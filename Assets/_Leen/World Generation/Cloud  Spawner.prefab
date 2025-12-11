@@ -45,10 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   land:
-  - {fileID: 4785846112937236915, guid: 8886150bf05262640ab3ad9c0f6b4581, type: 3}
-  - {fileID: 6108664049710032933, guid: b59410519f0d89745a33adee4f5c45c9, type: 3}
-  - {fileID: 3946040648289962741, guid: 18266fc79f94903418620c7be9667edb, type: 3}
+  - {fileID: 3846944215046808268, guid: 3ef4e26c161318242ab05eb3ff03b7e3, type: 3}
+  player: {fileID: 0}
+  maxLandsInScene: 5
   startPos: {x: -13, y: 0, z: 0}
-  gapPos: {x: 0, y: 0, z: 20}
-  destroyAfter: 5
-  respawnTime: 3
+  landLength: 20
+  moveSpeed: 7
