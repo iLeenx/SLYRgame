@@ -3139,7 +3139,7 @@ GameObject:
   - component: {fileID: 1210459264}
   - component: {fileID: 1210459263}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Shield icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3304,6 +3304,10 @@ PrefabInstance:
       propertyPath: shieldIcon
       value: 
       objectReference: {fileID: 854420807}
+    - target: {fileID: 7166572200441397328, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
+      propertyPath: shieldIcon2
+      value: 
+      objectReference: {fileID: 1210459263}
     - target: {fileID: 8322275246667305840, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
       propertyPath: jumpForce
       value: 10

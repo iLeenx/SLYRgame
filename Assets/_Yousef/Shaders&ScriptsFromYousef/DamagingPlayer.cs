@@ -6,6 +6,7 @@ public class DamagingPlayer : MonoBehaviour
     public int health = 20;
     [SerializeField] float invincibleTimer = 3;
     [SerializeField] Image shieldIcon;
+    [SerializeField] Image shieldIcon2;  // leen edited
     [SerializeField] GameObject losing;
 
     private bool invincible = false;
@@ -35,6 +36,11 @@ public class DamagingPlayer : MonoBehaviour
             Color color = shieldIcon.color;
             color.a = 1.0f;
             shieldIcon.color = color;
+
+            Color color2 = shieldIcon2.color;
+            color2.a = 1.0f;
+            shieldIcon2.color = color2;
+
             invincible = true;
             timer = invincibleTimer;
         }
@@ -54,6 +60,11 @@ public class DamagingPlayer : MonoBehaviour
             Color color = shieldIcon.color;
             color.a = 0.0f;
             shieldIcon.color = color;
+
+            Color color2 = shieldIcon2.color;
+            color2.a = 0.0f;
+            shieldIcon2.color = color2;
+
             invincible = false;
         }
     }
