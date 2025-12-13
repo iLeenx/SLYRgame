@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -7,7 +8,9 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] float bigShotCoolDown = 1;
     [SerializeField] float bulletHeight = 0;
     [SerializeField] float howFurther = 0;
-    
+    [SerializeField] Image bulletImage;
+    [SerializeField] Image bigBulletImage;
+
     private float nextShot = 0;
     private float bigShot = 0;
     private Vector3 shotPosition;
@@ -25,7 +28,11 @@ public class EnemyShooting : MonoBehaviour
             GameObject go = Instantiate(shot, shotPosition, transform.rotation);
 
             EnemyProjectile proj = go.GetComponent<EnemyProjectile>();
+            bulletImage.fillAmount = 0;
         }
+        float remaining = shotCoolDown -  (nextShot - Time.time);
+        float normalized = remaining / shotCoolDown;
+        bulletImage.fillAmount = Mathf.Clamp01(normalized);
         shootInAllDir();
     }
     void shootInAllDir()
@@ -57,6 +64,13 @@ public class EnemyShooting : MonoBehaviour
             EnemyProjectile proj = go.GetComponent<EnemyProjectile>();
             EnemyProjectile proj1 = go1.GetComponent<EnemyProjectile>();
             EnemyProjectile proj2 = go2.GetComponent<EnemyProjectile>();
+
+            bigBulletImage.fillAmount = 0;
+
+            return;
         }
+        float remaining = bigShotCoolDown - (bigShot - Time.time);
+        float normalized = remaining / bigShotCoolDown;
+        bigBulletImage.fillAmount = Mathf.Clamp01(normalized);
     }
 }
