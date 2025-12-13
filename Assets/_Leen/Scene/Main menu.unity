@@ -1101,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439617513052134852, guid: baa96cab00bcb964b85f1255c9d01100, type: 3}
       propertyPath: m_Name
-      value: Credit
+      value: Credits
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

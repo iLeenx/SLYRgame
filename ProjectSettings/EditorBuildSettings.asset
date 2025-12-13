@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/_Leen/Scene/How to.unity
     guid: 25a222859d1db52438125838cca0f4f8
   - enabled: 1
-    path: Assets/_Leen/Scene/level 1.unity
-    guid: bcc95750eaf545447962cac5b3d22652
-  - enabled: 1
     path: Assets/_Leen/Scene/Settings.unity
     guid: 72aa7c8b365db3d41982204c001bbea5
+  - enabled: 1
+    path: Assets/_Leen/Scene/Credits.unity
+    guid: dc910937110b238439c0fcf5f472a50b
   - enabled: 1
     path: Assets/__Prototype/Game.unity
     guid: 453aedb8423ba004dafc0ef8fdcdd67c

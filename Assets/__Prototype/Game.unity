@@ -6979,7 +6979,7 @@ MonoBehaviour:
   buff2: {fileID: 519974796596659617, guid: 996928e6bd7f53b4c922c5099f203847, type: 3}
   buff3: {fileID: 519974796596659617, guid: 84da2df8f4f10e3459ed32ba5c982741, type: 3}
   buff4: {fileID: 519974796596659617, guid: 84da2df8f4f10e3459ed32ba5c982741, type: 3}
-  spawnInterval: 1
+  spawnInterval: 15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
