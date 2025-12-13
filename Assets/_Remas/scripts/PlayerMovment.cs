@@ -42,6 +42,7 @@ public class PlayerMovment: MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 moveVector.y = jumpForce;
+                AudioManager.instance.playSFX("Jump");
                 animator.SetTrigger("Jump");
             }
         }
