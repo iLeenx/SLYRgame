@@ -45,9 +45,9 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -183,6 +183,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 52e588f723725a64388e8b0b8740bdd5, type: 3}
   - name: Gun Reload
     clip: {fileID: 8300000, guid: bda67f990bbf5fd49862906b24377704, type: 3}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 67a8e5e4c93b5144f8c3c696153ad80d, type: 3}
   musicSource: {fileID: 701469231942870571}
   sfxSource: {fileID: 679063833006928226}
 --- !u!1 &7801567244279132744
@@ -230,7 +232,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

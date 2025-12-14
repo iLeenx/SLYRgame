@@ -326,11 +326,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "move left and right using J and L\n[ to shoot 1 bullet\n] to shoot 3 bullets\npress
+  m_text: "move left and right using J and L\nI to shoot 1 bullet\nO to shoot 3 bullets\npress
     K to place obstacles in player 1\u2019s path\n\nshoot player 1 and defeat them
     to stop their run"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &148112030
@@ -1674,7 +1674,7 @@ MonoBehaviour:
     mouse click (RMC) \u2192 shoot in the right lane\npress K to place obstacles
     in player 1\u2019s path\n\nshoot player 1 and defeat them to stop their run"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1741,7 +1741,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &718773111
@@ -1991,13 +1991,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "move left and right using A and D and shoot using 1\ncollect the power-up
+  m_text: "move left and right using A and D and shoot using W\ncollect the power-up
     to get boosts\nthis is an infinite runner game \u2014 the world keeps moving
     forward and the challenge never ends\n\ntry to survive for as long as possible
     while avoiding dangers and attacks"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
-  m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
+  m_sharedMaterial: {fileID: 6846193115784561687, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2144,7 +2144,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &973096390

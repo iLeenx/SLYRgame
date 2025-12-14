@@ -25,7 +25,9 @@ public class PlayerShooting : MonoBehaviour
             shotPosition.y = shotPosition.y + shotHeight;
             shotPosition.z = shotPosition.z + shotForward;
 
-            AudioSource.PlayClipAtPoint(playerGunSound, transform.position);
+            //AudioSource.PlayClipAtPoint(playerGunSound, transform.position);
+            AudioManager.instance.playSFX("Gun");
+
             GameObject go = Instantiate(playerShot, shotPosition, transform.rotation);
 
             PlayerProjectile proj = go.GetComponent<PlayerProjectile>();
