@@ -463,8 +463,8 @@ MonoBehaviour:
 
     Yousef Almikainzi'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
-  m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
+  m_sharedMaterial: {fileID: 6846193115784561687, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1008,8 +1008,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SLYR Team Members
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
-  m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
+  m_sharedMaterial: {fileID: 6846193115784561687, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
