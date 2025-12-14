@@ -19,7 +19,8 @@ public class EnemyProjectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        AudioSource.PlayClipAtPoint(shotClip, transform.position);
+        //AudioSource.PlayClipAtPoint(shotClip, transform.position);
+        AudioManager.instance.playSFX("Gun");
         DestroySelf();
     }
     void DestroySelf()
