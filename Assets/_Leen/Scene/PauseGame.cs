@@ -6,14 +6,16 @@ public class PauseGame : MonoBehaviour
 
     [Header("Panels")]
     public GameObject panel;
-    public GameObject losingPanel;
+    public GameObject losingPanelP1;
+    public GameObject losingPanelP2;
 
     bool isPanelActive = false;
 
     void Start()
     {
         panel.SetActive(false);
-        losingPanel.SetActive(false);
+        losingPanelP1.SetActive(false);
+        losingPanelP2.SetActive(false);
 
         Time.timeScale = 1f;
     }
@@ -22,7 +24,7 @@ public class PauseGame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (losingPanel.activeSelf)
+            if (losingPanelP1.activeSelf || losingPanelP2.activeSelf)
             {
                 Debug.Log("Game is over, cannot pause.");
                 return; // do not allow pausing if game is over

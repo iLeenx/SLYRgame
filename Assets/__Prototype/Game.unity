@@ -6180,7 +6180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1997661099}
-  losingPanel: {fileID: 1903078986}
+  losingPanelP1: {fileID: 1903078986}
+  losingPanelP2: {fileID: 2071801582}
 --- !u!1 &2068051450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,7 +6668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343183592371327416, guid: 48f5c61ca47a25a45862ab03783c0106, type: 3}
       propertyPath: fadeSpeed
-      value: 5
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
