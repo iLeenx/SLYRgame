@@ -7,6 +7,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] float playerShotCoolDown = 1;
     [SerializeField] float shotHeight = 1;
     [SerializeField] float shotForward = 1;
+    [SerializeField] float angularChange;
     [SerializeField]
     Image[] bullets;
     [SerializeField] AudioClip playerGunSound;
@@ -25,10 +26,11 @@ public class PlayerShooting : MonoBehaviour
             shotPosition.y = shotPosition.y + shotHeight;
             shotPosition.z = shotPosition.z + shotForward;
 
-            //AudioSource.PlayClipAtPoint(playerGunSound, transform.position);
+            Quaternion shotRotation = Quaternion.Euler(transform.eulerAngles.x + angularChange, transform.eulerAngles.y, transform.eulerAngles.z);
+
             AudioManager.instance.playSFX("Gun");
 
-            GameObject go = Instantiate(playerShot, shotPosition, transform.rotation);
+            GameObject go = Instantiate(playerShot, shotPosition, shotRotation);
 
             PlayerProjectile proj = go.GetComponent<PlayerProjectile>();
             shotCount--;

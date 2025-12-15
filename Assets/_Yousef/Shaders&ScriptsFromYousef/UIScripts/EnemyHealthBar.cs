@@ -8,6 +8,7 @@ public class EnemyHealthBar : MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
+        slider.maxValue = healthBarModifier.health;
     }
 
     void Update()
