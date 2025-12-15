@@ -26,6 +26,7 @@ public class DamagingPlayer : MonoBehaviour
                 health--;
                 if (health == 0)
                 {
+                    Cursor.visible = true;
                     losing.SetActive(true);
                     Time.timeScale = 0.0f;
                 }
