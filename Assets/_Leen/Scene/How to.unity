@@ -326,8 +326,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "move left and right using J and L\nI to shoot 1 bullet\nO to shoot 3 bullets\npress
-    K to place obstacles in player 1\u2019s path\n\nshoot player 1 and defeat them
+  m_text: "Move left and right using J and L\nI to shoot 1 bullet\nO to shoot 3 bullets\nPress
+    K to place obstacles in player 1\u2019s path\n\nShoot player 1 and defeat them
     to stop their run"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "move left and right using J and L\nleft mouse click (LMC) \u2192 shoot
+  m_text: "Move left and right using J and L\nLeft mouse click (LMC) \u2192 shoot
     in the left lane\nmiddle mouse click (MMC) \u2192 shoot in the middle lane\nright
     mouse click (RMC) \u2192 shoot in the right lane\npress K to place obstacles
     in player 1\u2019s path\n\nshoot player 1 and defeat them to stop their run"
@@ -1991,10 +1991,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "move left and right using A and D and shoot using W\ncollect the power-up
-    to get boosts\nthis is an infinite runner game \u2014 the world keeps moving
-    forward and the challenge never ends\n\ntry to survive for as long as possible
-    while avoiding dangers and attacks"
+  m_text: "Move left and right using A and D \nJump using space and shoot using W\nCollect
+    the power-up to get boosts\nThis is an infinite runner game \u2014 the world
+    keeps moving forward and the challenge never ends\n\nTry to survive for as long
+    as possible while avoiding dangers and attacks"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_sharedMaterial: {fileID: 6846193115784561687, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
@@ -2131,11 +2131,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'there is 4 type of power up
+  m_text: 'There is 4 type of power up
 
 
-    shield          heal potion         
-    gun(1)          gun(3)
+    Shield          Heal potion         
+    Gun(1)          Gun(3)
 
 
 
