@@ -18,6 +18,7 @@ public class ScenesManager : MonoBehaviour
         //SceneManager.LoadScene("Main menu");
         sceneFader.FadeToScene("Main menu");
 
+        Cursor.visible = true;
         Time.timeScale = 1f;
         Debug.Log("Game Resumed");
     }
@@ -60,6 +61,7 @@ public class ScenesManager : MonoBehaviour
     {
         //SceneManager.LoadScene($"Level {levelNumber}");
         sceneFader.FadeToScene($"Level {levelNumber}");
+        Cursor.visible = false;
 
         Time.timeScale = 1f; // resume game
         Debug.Log("level started");
@@ -69,6 +71,7 @@ public class ScenesManager : MonoBehaviour
     {
         //SceneManager.LoadScene(SceneName);
         sceneFader.FadeToScene(SceneName);
+        Cursor.visible = false;
 
         Time.timeScale = 1f; // resume game
         Debug.Log("level started");
@@ -94,6 +97,7 @@ public class ScenesManager : MonoBehaviour
         Time.timeScale = 1f; // resume game
         //SceneManager.LoadScene(SceneName);
         sceneFader.FadeToScene(SceneName);
+        Cursor.visible = false;
         Debug.Log("level restarted");
     }
 }
