@@ -326,9 +326,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Move left and right using J and L\nI to shoot 1 bullet\nO to shoot 3 bullets\nPress
-    K to place obstacles in player 1\u2019s path\n\nShoot player 1 and defeat them
-    to stop their run"
+  m_text: "Move left and right using the arrows\nI to shoot 1 bullet\nO to shoot
+    3 bullets\nPress K to place obstacles in player 1\u2019s path\n\nShoot player
+    1 and defeat them to stop their run"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cde12916ca5c3c740a40d6cbdc9c2671, type: 2}
   m_sharedMaterial: {fileID: 1929646156592142001, guid: 9771e3758389e78459f0b6ef3a7e31dd, type: 2}
