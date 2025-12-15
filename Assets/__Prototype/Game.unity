@@ -4235,7 +4235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4250705808738985045, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
       propertyPath: angularChange
-      value: -20
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4250705808738985045, guid: 863c48f47d9d7da44b01ddd7cd4a1a90, type: 3}
       propertyPath: bullets.Array.size

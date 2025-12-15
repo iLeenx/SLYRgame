@@ -35,11 +35,11 @@ public class Player2Movement : MonoBehaviour
         float input = 0f;
 
         // J = move left (from player's perspective)
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.RightArrow))
             input = -1f;
 
         // L = move right
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.LeftArrow))
             input = 1f;
 
         
